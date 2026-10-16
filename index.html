@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew & Bite - Fresh coffee, delicious food, and cozy moments.">
+  <title>Brew & Bite | Coffee & Good Food</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="#home">Brew <span>&</span> Bite<span class="logo-dot">.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#visit">Visit Us</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR NEIGHBORHOOD CAFÉ</p>
+        <h1>Good coffee.<br>Great food.<br><span>Better moments.</span></h1>
+        <p class="hero-text">
+          Your cozy corner for freshly brewed coffee, delicious bites,
+          and conversations that last a little longer.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="button button-primary">Explore Our Menu ↗</a>
+          <a href="#about" class="button button-outline">Our Story</a>
+        </div>
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          Freshly brewed, made with love.
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85"
+          alt="Freshly prepared coffee in a cozy cafe">
+        <div class="image-note">
+          <span class="note-icon">☕</span>
+          <div>
+            <strong>Your daily happy place</strong>
+            <p>Good things start here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><span>☕</span><p>Freshly Brewed</p></div>
+      <div><span>🥐</span><p>Baked with Love</p></div>
+      <div><span>🌿</span><p>Quality Ingredients</p></div>
+      <div><span>♡</span><p>Made for Moments</p></div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A LITTLE SOMETHING FOR EVERYONE</p>
+          <h2>Made fresh.<br><span>Served with love.</span></h2>
+        </div>
+        <p class="section-description">
+          From your first morning coffee to your afternoon treat,
+          there's always something delicious waiting for you.
+        </p>
+      </div>
+
+      <div class="filter-buttons" role="group" aria-label="Filter menu">
+        <button class="filter-btn active" data-filter="all">All Favorites</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Iced coffee in a glass" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Iced Latte</h3><span>₹180</span></div>
+            <p>Chilled espresso with smooth, creamy milk.</p>
+            <span class="category-label">COFFEE</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="food">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80" alt="Fresh sandwich served for lunch" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Garden Sandwich</h3><span>₹220</span></div>
+            <p>Fresh vegetables, cheese, and our signature sauce.</p>
+            <span class="category-label">FOOD</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake with rich frosting" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Chocolate Cake</h3><span>₹160</span></div>
+            <p>Rich chocolate layers for your sweet cravings.</p>
+            <span class="category-label">DESSERT</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Freshly made cappuccino" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Classic Cappuccino</h3><span>₹150</span></div>
+            <p>Rich espresso topped with silky milk foam.</p>
+            <span class="category-label">COFFEE</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="food">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=80" alt="Fresh breakfast with eggs and toast" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Sunrise Breakfast</h3><span>₹250</span></div>
+            <p>A satisfying breakfast to start your day right.</p>
+            <span class="category-label">FOOD</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Delicious scoop of ice cream" loading="lazy">
+          <div class="menu-card-body">
+            <div class="menu-title"><h3>Ice Cream Sundae</h3><span>₹140</span></div>
+            <p>A cool, creamy treat for any time of day.</p>
+            <span class="category-label">DESSERT</span>
+          </div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">Sample menu and prices for this portfolio demo.</p>
+    </section>
+
+    <section class="story-section section" id="about">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Warm and inviting cafe interior" loading="lazy">
+      </div>
+      <div class="story-content">
+        <p class="eyebrow">MORE THAN JUST A CAFÉ</p>
+        <h2>A place to slow down and <span>savor life.</span></h2>
+        <p>
+          Brew & Bite was imagined as a little escape from the everyday.
+          A place where coffee is carefully prepared, food feels comforting,
+          and everyone has a seat at the table.
+        </p>
+        <p>
+          Whether you're catching up with friends, working on your next big
+          idea, or simply enjoying a quiet moment, we'd love to welcome you.
+        </p>
+        <a href="#visit" class="text-link">Come say hello ↗</a>
+      </div>
+    </section>
+
+    <section class="visit-section section" id="visit">
+      <div class="visit-copy">
+        <p class="eyebrow">YOUR TABLE IS WAITING</p>
+        <h2>Good days begin <span>with good coffee.</span></h2>
+        <p>Drop by for a cup, stay for the atmosphere.</p>
+        <a href="#contact" class="button button-light">Plan Your Visit ↗</a>
+      </div>
+      <div class="hours-card">
+        <h3>When to find us</h3>
+        <div><span>Monday – Friday</span><strong>8 AM – 9 PM</strong></div>
+        <div><span>Saturday</span><strong>9 AM – 10 PM</strong></div>
+        <div><span>Sunday</span><strong>9 AM – 8 PM</strong></div>
+        <p>Demo hours — replace with the client's real schedule.</p>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <p class="eyebrow">LET'S MAKE IT A COFFEE DATE</p>
+      <h2>We'd love to <span>hear from you.</span></h2>
+      <p>Questions, feedback, or just want to say hello? Send us a message.</p>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+
+        <button class="button button-primary" type="submit">Prepare Message ↗</button>
+        <p class="form-message" id="formMessage" aria-live="polite"></p>
+      </form>
+      <p class="form-disclaimer">Demo form only. It prepares an email using your device; it does not send data to a server.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home">Brew <span>&</span> Bite<span class="logo-dot">.</span></a>
+    <p>Good coffee. Great food. Better moments.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <small>© <span id="year"></span> Brew & Bite. Fictional portfolio project.</small>
+  </footer>
+</body>
+</html>
